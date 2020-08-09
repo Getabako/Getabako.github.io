@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Ultra-Regular';
+	src: url(Ultra-Regular.ttf);
+}
+
+body {
+    font-family: Ultra-Regular;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    list-style: none;
+    overflow: hidden;
+    float: right;
+
+    top: 0px;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+  }
+   
+#nav li {
+    width: 140px;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+  }
+   
+#nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  #nav li a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .top {
+    text-align: center;
+  }
+
+  .about img{
+    float: left;
+  }
+  .about p{
+    overflow: hidden;
+  }
+
+  .parent {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ div.children{
+  width:150px;
+  border: 9px solid #333;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+div.children:hover {
+  opacity: 0.6;
+}
+
+div.children a div{
+	width: 100%;
+	height:48px;
+	font-weight:900;
+	text-align:center;
+	word-break:break-all;
+	overflow:hidden;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
+}

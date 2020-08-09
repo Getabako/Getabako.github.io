@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <title>WonderWorks</title>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="scroll.js"></script>
+        <body>
+            <h2><a href="index.html">WonderWorks</a></h2>
+            <ul id="nav">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Works.html">Works</a></li>
+                <li><a href="mail.php">Contact</a></li>
+            </ul>
+            <div class="top"><img src="Top.jpg" alt="トップ画像" width="1024" height="516"></div>
+            <br><br>
+            <h3>About</h3>
+            <p>普段はゲームやロボットを作っています。</p>
+            <p>2018年にプログラミングを始めました。</p>
+            <p>2020年からはWeb開発やアプリ開発を本格的に始めました。</p>
+            <p>今年のうちにアプリをリリースしたいです。</p>
+            
+            <div class="about">
+            <img src="Profile.png" alt="プロフィール画像" width="150" height="150">
+            <p>名前：　湾打 太郎<br>
+            所在地：　東京都<br>
+            趣味：　カードゲーム<br>
+            得意なこと：　プログラミング</p>
+            </div>
+            <br><br>
+            <h3>Work</h3>
+            <div class ="parent">
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work1.png" alt="作品画像" width="150" height="150"></a>
+            </div>
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work2.png" alt="作品画像" width="150" height="150"></a>
+            </div>
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work3.png" alt="作品画像" width="150" height="150"></a>
+            </div>
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work4.png" alt="作品画像" width="150" height="150"></a>
+            </div>
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work5.png" alt="作品画像" width="150" height="150"></a>
+            </div>
+            <div class ="children">
+            <a href="https://scratch.mit.edu/projects/384542901"><img src="Work6.png" alt="プロフィール画像" width="150" height="150" size-full/></a>
+            </div>
+            </div>
+            <br>
+            <form class="mailForm" action="mailsend.php" method="post">
+                <p>お気軽にお問い合わせください。</p>
+                <dl>
+                  <dt>お名前</dt>
+                  <dd>
+                    <input name="name" type="text" required="required" id="name">
+                  </dd>
+                  <dt>メールアドレス</dt>
+                  <dd>
+                    <input name="email" type="email" required="required" id="email">
+                  </dd>
+                  <dt>お問い合わせ内容</dt>
+                  <dd>
+                    <textarea name="content" required="required" id="content"></textarea>
+                  </dd>
+                  <input type="hidden" id="token" name="token" value="1234567" />
+                </dl>
+                <p id="submit_button_cover">
+                  <input name="submit_buton" type="submit" id="submit_button" value="送信">
+                </p>
+           </form>
+            <div id="page_top"><a href="#">TOP</a></div>
+        </body>
+    </head>
+</html>
